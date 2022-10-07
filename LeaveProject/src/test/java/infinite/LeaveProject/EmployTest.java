@@ -13,6 +13,8 @@ public class EmployTest {
 		Employ employ3 = new Employ(1, "Javed Khan", "javed@khan.com", "6942069420", Date.valueOf("2022-08-18"), "Java", 1000, 10);
 		String result = "Employ [empId=" + 1 + ", Name=" + "Javed Khan" + ", Email=" + "javed@khan.com" + ", Mob=" + "6942069420" + ", DOJ=" + Date.valueOf("2022-08-10")
 				+ ", Dept=" + "Java" + ", mId=" + 1000 + ", leaveAvail=" + 10 + "]";
+		
+		assertEquals(result, employ3.toString());
 	}
 	@Test
 	public void testGetterAndSetter(){
